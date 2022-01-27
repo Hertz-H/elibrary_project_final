@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/categories_style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <!-- <link rel="stylesheet" href="css/style_slider.css"> -->
+    <link rel="stylesheet" href="css/slider_with_js.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+   
+    .img_container i{
+        display: inline-block;
+        width: 100px;
+        height:100px;
+
+    }
+    .img_container i img{
+        width:100%;
+        height:100%;
+    }
+    .show_all{
+        color:blue;
+    }
+    .offers_cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,170px);
+    gap: 10px;
+    justify-content: center;
+}
+
+  
+    .card{
+        position: relative;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        height: 323px;
+    }
+    .card .img_container{
+        margin: auto;
+        width:95%;
+        height:150px;
+        border-radius: 10px;
+    }
+    .card img{
+        width:100%;
+        height: 100%;
+        
+    }
+    .card_heading {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+    .card_heading i {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+    .card_heading .book_name ,.note{
+        color:grey;
+    }
+    .book_name{
+        font-size: .9rem;
+    }
+    .note{
+        font-size: .7rem;
+    }
+    .price_heading {
+    text-align: center;
+    height: 52px;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    top: 64.5%;
+}
+.otherformat {
+    font-size: .8rem;
+    margin-top: 3px;
+    color: grey;
+}
+
+
+.otherformat span {
+    color: #3073d6;
+    font-weight: bold;
+}
+    .price_heading .price{
+        color:var(--secondary-red);
+        font-weight: bold;
+    }
+    .price_heading .currency{
+        font-size: .8rem;
+        color:red;
+    }
+    .card_info{
+        display: flex;
+        flex-direction: column;
+        gap:10px
+    }
+    .card_icons_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .card_icons_container span{
+        text-align: center;
+        width:35px;
+        height:35px;
+        line-height: 35px;
+    }
+   
+    .card_icons_container .basket_icon{
+      
+        border-radius: 50%;
+        background-color: var(--main-red);
+        text-align: center;
+        line-height: 35px;
+      
+    }
+    .card_icons_container .basket_icon i{
+        color:white;
+    }
+    .timer_container{
+        position: absolute;
+        top: -3px;;
+        padding:.2rem;
+
+    }
+    .timer_container {
+        text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+}
+.timer_container span {
+    
+    background-color: firebrick;
+    display: inline-block;
+    border-radius: 3px;
+    width: 30px;
+    padding: 4px 4px;
+    color: white;
+}
+/* categories SEction*/
+.cate_container{
+    display: flex;
+    gap: 10px;
+   
+    
+}
+
+    .offers_cards_container{
+        margin-top:50px;
+    }
+
+    .shoping_cart{
+        position: relative;
+        
+    }
+    .shoping_cart .basktet_items_added{
+        position: absolute;
+        top:-5px;
+        right:-15px;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background-color: brown;
+        color:white;
+        font-size: .5rem;
+        line-height: 20px;
+        text-align: center;
+    }
+
+
+
+    /* category page styles only*/
+
+.cate_container{
+    margin-top:60px;
+    
+}
+.cat_prod_container{
+    width:90%;
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.filer_cat_con {
+    text-align: left;
+    width:99%;
+}
+.filer_cat_con span{
+    font-size: .8rem;
+}
+.filer_cat_con select{
+    padding:0 2.5rem;
+}
+.offers_cards_container{
+        margin-top:10px;
+        width:99%;
+    }
+.show_mr_pro_btn{
+    color:white;
+    width:99%;
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    text-align: center;
+    font-size: .8rem;
+  padding:3px 0;
+  line-height: calc(6px * .8rem);
+
+}
+.line{
+    background-color: #f1f1f1;
+    height:8px;
+    width:100%;
+}
+.recomend{
+    width:99%;
+    text-align: right;
+    color:var(--main-green);
+    font-weight: bold;
+    margin-bottom: 500px;
+}
+.card_icons_container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-self: flex-end;
+        margin-top: auto;
+        position: absolute;
+        bottom: 11px;
+        width: 100%;
+       
+    }
+    .card_icons_container i{
+       display: inline-block;
+      height:16px;
+      width: 25px;
+      font-size:20px ;
+      color:#42526e;
+    }
+    .card_icons_container i:first-of-type{
+        display: inline-block;
+       height:25px;
+       width: 25px;
+       font-size:20px ;
+       color:#42526e;
+     }
+    
+    .card_icons_container span{
+        text-align: center;
+        width:35px;
+        height:35px;
+        line-height: 35px;
+    }
+    .card_icons_container .basket_icon{
+      
+        border-radius: 50%;
+        background-color: #d40b0e;
+        text-align: center;
+        line-height: 35px;
+        cursor: pointer;
+      
+    }
+    .card_icons_container .basket_icon i{
+        color:white;
+        font-size: 1rem;
+    }
+/* eind category page styles only*/
+@media(max-width:992px){
+    .offers_cards_container{
+        width:100%;
+        /* justify-content: center; */
+    }
+    .cate_container {
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.cat-section{
+    width:400px;
+    align-self: center;
+   
+}
+.filer_cat_con {
+    text-align: left;
+}
+  /* category page styles only*/
+}
+
+</style>
+<body>
+
+    <header>
+        <div class="nav_fixed">
+                 <nav>
+                   
+                    <div class="container">
+                        <div class="upper_header">
+                            <ul class="long_nav list_nav">
+                                <li><a class="sign_inbtn"><i><img src="img/man-user.png" alt=""></i> أدخل لحسابك</a><a class="sign_upbtn"> أو سجل الان </a></li>
+                                <li><a href=""><i><img src="img/star.png" alt=""></i>الرئيسية</a> </li>
+                                <li><a href=""><i><img src="img/delivery-time.png" alt=""></i>من نحن </a> </li>
+                                <li><a href=""><i><img src="img/contact.png" alt=""></i>اتصل بنا </a></li>
+                                <li><a href=""><i><img src="img/help.png" alt=""></i>المساعدة</a> </li>
+                                <li><a href=""><i><img src="img/location.png" alt=""></i>سياسة الخصوصية</a> </li>
+                                <li><a href=""><i><img src="img/suadia.png" alt=""></i>اليمن </a> <i></i></li>
+                                <li><a href="">English</a><i><img src="img/translation _2.png" alt=""></i> </li>
+                            </ul>  
+                            <div class="lower_header_section">
+                                <div class="burger_menue">
+                                    <i class="fas fa-bars">
+                                    </i>
+                                   
+                                </div>
+                                <div class="search">
+                                    <input type="text" placeholder="البحث" class="search_input"><i class="fas fa-search"></i>
+                                </div>
+                                <div class="shoping_cart">
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    <div class="basktet_items_added"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dorp_down_menue">
+                            <ul class="burger_list ">
+                                <li><a class="sign_inbtn"><i><img src="img/man-user.png" alt=""></i> أدخل لحسابك</a><a class="sign_upbtn"> أو سجل الان </a></li>
+                                <li><a href=""><i><img src="img/star.png" alt=""></i>الرئيسية</a> </li>
+                                <li><a href=""><i><img src="img/delivery-time.png" alt=""></i>من نحن </a> </li>
+                                <li><a href=""><i><img src="img/contact.png" alt=""></i>اتصل بنا </a></li>
+                                <li><a href=""><i><img src="img/help.png" alt=""></i>المساعدة</a> </li>
+                                <li><a href=""><i><img src="img/location.png" alt=""></i>سياسة الخصوصية</a> </li>
+                                <li><a href=""><i><img src="img/suadia.png" alt=""></i>اليمن </a> <i></i></li>
+                                <li><a href="">English</a><i><img src="img/translation _2.png" alt=""></i> </li>
+                            </ul>
+                        </div>
+                    </div>
+               
+                </nav>
+            </div> 
+                <div class="container">
+                    <div class="lower_header_section search_logo_con">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="البحث" class="search_input"><i class="fas fa-search"></i>
+                        </div>
+                        <a href="check_out.html"><div class="shoping_cart">
+                            <i class="fas fa-cart-arrow-down"></i> 
+                            <div class="basktet_items_added"></div>
+                        </div></a>
+                    </div>
+                </div>
+    </header>
+<main>
+<div class="container">
+    <div class="slider_container">	
+            
+        <div class="img_slides" id="one">			
+              <img src="img/s_2.jpg">
+              
+        </div>
+       
+        <div class="img_slides" id="two">
+           
+              <img src="img/s_1.webp " >
+             
+        </div>
+              
+        <div class="img_slides" id="three">
+              <img src="img/s_3.webp">	
+            
+                
+        </div>
+     
+        <div class="img_slides" id="four">
+              <img src="img/s_4.jpg">	
+             
+              
+                
+        </div>
+     
+        <div class="img_slides" id="five">
+              <img src="img/s_5.jpg">	
+             
+                 
+     
+        </div>
+     
+        <div id="nav_slide">
+           <span  class="dots " id="dot1"></span>
+           <span class="dots " id="dot1"></span>
+           <span class="dots  " id="dot1"></span>
+           <span class="dots " id="dot1"></span>
+           <span class="dots  " id="dot1"></span>
+
+
+        </div>
+        <div class="btns_container">
+            <div class="next" ><span>&#x2039;</span></div>	
+
+            <div class="prev"><span>&#x203a;</span></div>
+          
+        </div>
+        
+     </div>
+  
+    <div class="cate_container">
+        <!-- categories -->
+  
+        <div class="cat-section">
+            <div class="cat_header">
+                <a href="">الرئيسية</a> <span class="sperator"> /</span>
+                <a href="">الكتب العربية</a> <span class="sperator"> /</span>
+                <a href="">كتب إلكترونية</a>
+            </div>
+            <div class="cate_body">
+                <div class="cat_name">
+                    <i class="fas fa-book-open "></i>
+                    <span class="title">كتب إلكترونية</span>
+                </div>
+                <ul class="list_con">
+                    <div>
+                    <li><a href="">تصفية النتائج</a></li>
+                    <li><a href="">علامة تجارية</a><i class="far fa-minus-square"></i></li>
+                    <li><a href="">السعر</a><i class="far fa-minus-square"></i></li>
+                    <li class="range_cont"><div class="range"> </div>
+                    <div class="pric_con"><span> ر.س 0</span> <span></span>ر.س 150</div></li>
+                    <li><a href="">صيغة الكتاب</a><i class="far fa-minus-square"></i></li>
+                </div>
+                </ul>
+            </div>
+        </div>
+        <div class="cat_prod_container">
+            <div class="filer_cat_con">
+                <span> الترتيب بحسب :</span>  <select name="" id="">
+
+                    <option value="" selected> الرجاء الاختيار</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+
+
+                </select>
+            </div>
+            <div class="offers_cards_container">
+                <div class="card" >
+
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_1.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info ">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                         <div class=" book_name"> <span class=" book_name_span"> كبرياء وهوى  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+               
+                         
+                    
+                    <div class="card_icons_container">
+                             <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                         <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                         <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                    </div>
+                 </div>
+                </div>
+           
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_3.jpg" alt=""></a>
+                    </div>
+                  <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> <span class=" book_name_span"> خلف قوتي ضعف يحبك</span>    <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                      
+                
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div> 
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html">  <img src="img/l.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> 
+                            <a href="book_page.html">  <span class=" book_name_span">كتالوج الحب </span>    <span>(كتاب إلكتروني) </span>
+                            </div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                        <div class="otherformat">
+                            صيغ أخرى: <span>كتاب مطبوع</span>
+                        </div>
+                    </div>
+                   
+                       
+                    
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_4.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> الى الذي أسرني حبه  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                        
+                    <div class="card_icons_container">
+                        <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                    <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                    <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+               </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_5.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> زواج غير متوقع  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                         
+        
+                   
+                          <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card" >
+
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_1.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info ">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                         <div class=" book_name"> <span class=" book_name_span"> كبرياء وهوى  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+               
+                         
+                    
+                    <div class="card_icons_container">
+                             <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                         <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                         <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                    </div>
+                 </div>
+                </div>
+           
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_3.jpg" alt=""></a>
+                    </div>
+                  <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> <span class=" book_name_span"> خلف قوتي ضعف يحبك</span>    <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                      
+                
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div> 
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html">  <img src="img/l.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> 
+                            <a href="book_page.html">  <span class=" book_name_span">كتالوج الحب </span>    <span>(كتاب إلكتروني) </span>
+                            </div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                        <div class="otherformat">
+                            صيغ أخرى: <span>كتاب مطبوع</span>
+                        </div>
+                    </div>
+                   
+                       
+                    
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_4.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> الى الذي أسرني حبه  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                        
+                    <div class="card_icons_container">
+                        <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                    <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                    <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+               </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_5.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> زواج غير متوقع  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                         
+        
+                   
+                          <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card" >
+
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_1.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info ">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                         <div class=" book_name"> <span class=" book_name_span"> كبرياء وهوى  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+               
+                         
+                    
+                    <div class="card_icons_container">
+                             <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                         <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                         <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                    </div>
+                 </div>
+                </div>
+           
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_3.jpg" alt=""></a>
+                    </div>
+                  <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> <span class=" book_name_span"> خلف قوتي ضعف يحبك</span>    <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                      
+                
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div> 
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html">  <img src="img/l.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> 
+                            <a href="book_page.html">  <span class=" book_name_span">كتالوج الحب </span>    <span>(كتاب إلكتروني) </span>
+                            </div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                        <div class="otherformat">
+                            صيغ أخرى: <span>كتاب مطبوع</span>
+                        </div>
+                    </div>
+                   
+                       
+                    
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_4.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> الى الذي أسرني حبه  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                        
+                    <div class="card_icons_container">
+                        <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                    <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                    <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+               </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_5.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> زواج غير متوقع  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                         
+        
+                   
+                          <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card" >
+
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_1.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info ">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                         <div class=" book_name"> <span class=" book_name_span"> كبرياء وهوى  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+               
+                         
+                    
+                    <div class="card_icons_container">
+                             <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                         <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                         <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                    </div>
+                 </div>
+                </div>
+           
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_3.jpg" alt=""></a>
+                    </div>
+                  <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> <span class=" book_name_span"> خلف قوتي ضعف يحبك</span>    <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                      
+                
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div> 
+                <div class="card" >
+                    <div class="img_container">
+                        <a href="book_page.html">  <img src="img/l.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info" >
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <span>  كتاب إلكتروني</span>
+                        <div class=" gud book_name"> 
+                            <a href="book_page.html">  <span class=" book_name_span">كتالوج الحب </span>    <span>(كتاب إلكتروني) </span>
+                            </div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                        <div class="otherformat">
+                            صيغ أخرى: <span>كتاب مطبوع</span>
+                        </div>
+                    </div>
+                   
+                       
+                    
+                         <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_4.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html"> <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> الى الذي أسرني حبه  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                        
+                    <div class="card_icons_container">
+                        <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                    <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                    <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+               </div>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="img_container">
+                        <a href="book_page.html"> <img src="img/k_5.jpg" alt=""></a>
+                    </div>
+                 <div class="card_info">
+                    <div class="card_heading">
+                        <i class=" "><img src="img/book.svg" alt=""></i>
+                        <a href="book_page.html">  <span>  كتاب إلكتروني</span>
+                        <div class="book_name"> <span class="book_name_span"> زواج غير متوقع  </span> <span>(كتاب إلكتروني) </span></div></a>
+                    </div>
+                    <div class="price_heading">
+                        <span class="price">17.99 </span><span class="currency">ر.س</span>
+                        <div class="note"> شامل الضريبة</div>
+                    </div>
+                   
+                         
+        
+                   
+                          <div class="card_icons_container">
+                            <span><i class=""><img src="img/star_2.svg" alt=""></i> </span>
+                        <span class="basket_icon"> <i class="fas fa-cart-arrow-down"></i> </span>
+                        <span>  <i class=""><img src="img/compare_2.svg" alt=""> </i>
+                   </div>
+                 </div>
+                </div>
+            </div>
+            <btn class="show_mr_pro_btn">
+                    عرض المزيد
+            </btn>
+            <div class="line"></div>
+            <div class="recomend">
+                اشتر من الكتب الالكترنية على متجر جرير الالكتروني
+            </div>
+            
+     </div>
+    </div>
+    
+     
+    </div>
+
+ 
+</main>
+
+<footer>
+   
+        <div class="upper_footer">
+          <div class="container">
+            <div class="subscribe_srv_abt_container">
+                <div class="subscribe_social_container">
+        
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                        <div class="emial_cont">
+                            <div class="input_cont"> <input type="email" placeholder="ادخل بريدك الالكتروني"> <i class="fas fa-lock"></i></div>
+                            
+                            <button class="btn">اشتراك</button>
+                        </div> 
+                  
+                </div>
+            
+        
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+
+                    </div> 
+                </div>
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+
+                    </div> 
+                </div>
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+
+                    </div> 
+                </div>
+                <div class="custmer_srv_container">
+                    <div class="custmer_srv_container">
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>مبيعات الشركات</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                            <p>الاسئلة المتكررة</p>
+                        <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                    </div> 
+                </div>
+            </div>
+             <div class="subscribe_srv_abt_container">
+                    <div class="social_links_contianer">
+                        <h5 class="footer_heading">تواصل معنا</h5>
+                        <ul>
+                            <li><a href=""><i><img src="img/face.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/twitter.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/youtube.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/insta.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/linkedin.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/snap.png" alt=""></i></a></li>
+                            <li><a href=""><i> <img src="img/snap.png" alt=""></i></a></li>
+                           
+
+                        </ul> 
+                    </div>
+            </div>
+         
+        </div>
+    </div>
+   
+        <div class="lower_footer_container">
+            <div class="container">
+            <div class="lower_footer">
+            <div class="footer_img_container">
+                <div>  <img src="img/Amazon.jpg" alt=""></div>
+                <div><img src="img/MasterCard.svg" alt=""> </div>
+                <div><img src="img/visa_1.png" alt=""> </div>
+             
+                <div><img src="img/mada.svg" alt=""> </div>
+                <div> <img src="img/qitaf_logo.png" alt=""> </div>
+                <div><img src="img/visa_1.png" alt="">  </div>
+               
+            </div>
+            
+            <div class="footer_copyright_container">
+                <div> <span> سياسة الخصوصية</span> 
+                        <div class="sperator"></div>
+                        <span> شروط الخدمة </span>
+                </div>
+                <div>  .جميع الحقوق محفوظة لمكتبة جرير  &copy 2015. س.ت. 1010032264. اونلاين س.ت. 1010654213</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ <!-- sign in -->
+ 
+ <div class="overly">
+    <div class="signin">
+        <div class=" form_container_signin">
+            <i  class="close_signin"> <img src="img/close_icon.svg" alt=""></i>
+           <div class="sign_header">
+               <h3>تسجيل الدخول</h3>
+           </div>
+           <hr>
+           
+            <!--signin -->
+              <!--  -->
+            <form action="">
+    
+            <div class="input_containtr"><input type="text">
+                <span class="input_title">البريد الالكتروني</span>
+            </div>
+          
+            <div class="input_containtr"><input type="text">
+                <span class="input_title">كلمة السر</span>
+                <span class="forget">نسيت؟</span>
+            </div>
+            
+            <div class="input_containtr log_in"><button> تسجيل دخول</button></div>
+                                                        
+            
+       </form>
+       <div class="form_footer">
+           <span>لديك حساب؟ </span>
+           <a href="sign_up.html"><button class="creat_account">  إنشاء حساب جديد</button></a>
+       </div>
+              
+     </div>
+    </div>
+ 
+</div>
+
+
+<!-- sign up -->
+<div class="overly">
+    <div class="signup">
+
+        <div class=" form_container">
+
+        <div class="sign_header">
+            <i  class="close_signup"> <img src="img/close_icon.svg" alt=""></i>
+            <h3>انشاء حساب</h3>
+            
+        </div>
+        <hr>
+        
+            <!-- sign_up -->
+            <!--  -->
+            <form action="">
+            <div class="number_container">
+                <div class="input_containtr"><input type="text" placeholder="رقم الجوال"></div>
+                <div class="input_containtr">
+                    <span>رمز البلد</span>
+                    <select name="contry_key">
+                        <option value="967">+967</option>
+                        <div><option value="+970" selected>+970<i><img src="" alt=""></i></option></div>
+                        <option value=""></option>
+                    </select>
+                    <i><img src="img/suadia.png" alt=""></i>
+                </div>
+            </div>
+            <div class="valid_notes">سوف نرسل  لك<span> رمز  التحقق عن طريق رسالة نصية</span>  </div>
+                
+                    <div class="input_containtr  input_darker"><input type="text" >
+                    <span class="span_valid_num">ارسال رمز التحقق </span></div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">الاسم الأول</span></div>
+                
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">اسم العائلة</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">البريد الالكتروني</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title"> تأكيد البريد الالكتروني</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">كلمة السر</span>
+                </div>
+                <div class="checkbox_container">
+                    <input type="checkbox" name="policy" value="agree"checked>   أوافق على <span>على الشروط والأحكام</span>  <br>
+                    <input type="checkbox" name="subscribe" value="yes" checked> التسجيل للانضمام للبشرة البردية<br>
+                </div>
+                
+                 <button class="btn"> إنشاء حساب</button>
+                                                            
+                <div class="form_footer">
+                    <span>لديك حساب؟ </span><a href="login.html">تسجيل الدخول &lt;</a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+</footer>
+<script src="js/header.js"></script>
+<script src="js/slider.js"></script>
+
+
+   
+</body>
+
+</html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="css/user_info.css">
+    <link rel="stylesheet" href="css/check_out_steper.css">
+    <link rel="stylesheet" href="css/steper.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    
+ 
+
+</head>
+
+<body>
+    <header>
+        <div class="nav_fixed">
+                 <nav>
+                   
+                    <div class="container">
+                        <div class="upper_header">
+                            <ul class="long_nav list_nav">
+                                <li><a class="sign_inbtn"><i><img src="img/man-user.png" alt=""></i> أدخل لحسابك</a><a class="sign_upbtn"> أو سجل الان </a></li>
+                                <li><a href="index.html"><i><img src="img/star.png" alt=""></i>الرئيسية</a> </li>
+                                <li><a href=""><i><img src="img/delivery-time.png" alt=""></i>من نحن </a> </li>
+                                <li><a href=""><i><img src="img/contact.png" alt=""></i>اتصل بنا </a></li>
+                                <li><a href=""><i><img src="img/help.png" alt=""></i>المساعدة</a> </li>
+                                <li><a href=""><i><img src="img/location.png" alt=""></i>سياسة الخصوصية</a> </li>
+                                <li><a href=""><i><img src="img/suadia.png" alt=""></i>اليمن </a> <i></i></li>
+                                <li class="change_language"><a >English</a><i><img src="img/translation _2.png" alt=""></i> </li>
+                            </ul>  
+                            <div class="lower_header_section">
+                                <div class="burger_menue">
+                                    <i class="fas fa-bars">
+                                    </i>
+                                   
+                                </div>
+                                <div class="search">
+                                    <input type="text" placeholder="البحث" class="search_input"><i class="fas fa-search"></i>
+                                </div>
+                                <div class="shoping_cart">
+                                    <i class="fas fa-cart-arrow-down"></i> 
+                                    <div class="basktet_items_added"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dorp_down_menue">
+                            <ul class="burger_list ">
+                                <li><a class="sign_inbtn"><i><img src="img/man-user.png" alt=""></i> أدخل لحسابك</a><a class="sign_upbtn"> أو سجل الان </a></li>
+                                <li><a href="index.html"><i><img src="img/star.png" alt=""></i>الرئيسية</a> </li>
+                                <li><a href=""><i><img src="img/delivery-time.png" alt=""></i>من نحن </a> </li>
+                                <li><a href=""><i><img src="img/contact.png" alt=""></i>اتصل بنا </a></li>
+                                <li><a href=""><i><img src="img/help.png" alt=""></i>المساعدة</a> </li>
+                                <li><a href=""><i><img src="img/location.png" alt=""></i>سياسة الخصوصية</a> </li>
+                                <li><a href=""><i><img src="img/suadia.png" alt=""></i>اليمن </a> <i></i></li>
+                                <li class="change_language"><a >English</a><i><img src="img/translation _2.png" alt=""></i> </li>
+                            </ul>
+                        </div>
+                    </div>
+               
+                </nav>
+            </div> 
+                <div class="container">
+                    <div class="lower_header_section search_logo_con">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="البحث" class="search_input"><i class="fas fa-search"></i>
+                        </div>
+                        <a href="check_out.html"><div class="shoping_cart">
+                            <i class="fas fa-cart-arrow-down"></i> 
+                            <div class="basktet_items_added"></div>
+                        </div></a>
+                    </div>
+                </div>
+    </header>
+<div class="steper_container">
+    <div class="progeress_container">
+        
+        <div class="circles_container">
+            <div class="line_colored">
+
+            </div>
+            <div class="circle">
+                <span class="circle_num">1</span> 
+                 <div class="circle_info"> 
+                     <div class="circle_heading">  <span> معلومات</span> <span>الشحن  </span></div>
+                 </div>
+            </div>
+            <div class="circle"><span class="circle_num">2</span> 
+                <div class="circle_info"> 
+                    <div class="circle_heading">  <span> معلومات</span> <span>الدفع  </span></div>
+                </div>
+            </div>
+            <div class="circle"><span class="circle_num">3</span> 
+                <div class="circle_info"> 
+                    <div class="circle_heading">  <span> تأكيد</span> <span>الشراء  </span></div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="page_slider">
+        <div   id="iframe_steper">
+          
+          </div>
+       
+    </div>
+    <div class="btn_container">
+       
+        <button id="nexts">التالي
+        </button>
+        <button id="prevs">السابق
+        </button>
+    </div>
+</div>  
+<div class="user_info hidden">
+
+    <form action="">
+         <div class="input_containtr"><input type="text">
+             <span class="input_title">الاسم</span>
+         </div>
+       
+         <div class="input_containtr"><input type="text">
+             <span class="input_title">المنطقة   </span>
+         </div>
+         <div class="input_containtr"><input type="text">
+             <span class="input_title">العنوان   </span>
+         </div>
+         <div class="input_containtr"><input type="text">
+             <span class="input_title">رقم التلفون </span>
+         </div>
+                                                       
+    </form>
+ </div> 
+ <div class="payment hidden " >
+
+    <form action="" >
+        <div class="input_containtr pay">
+            <span class="pay_method">طريقة الدفع  </span>
+            <select name="contry_key" class="contry_key">
+                <option value="967">ايداع  </option>
+                <div><option value="cach" selected>كاش <i><img src="" alt=""></i></option></div>
+                <option value=""> حوالة</option>
+            </select>
+            
+        </div>
+        <div class="input_containtr"><input type="text">
+            <span class="input_title">رقم الحساب  </span>
+        </div>
+              
+       </form>
+    </div>
+    <div class="check_out hidden" >
+            <div class="container">
+    
+                <div class="checkout_cards_container">
+                
+                <div class="chckout_prod_con">
+                    
+                    <div class="product_item">
+                        <div class="book_img_info">
+                            <div class="book_img_heading">
+                                <i class="book_img"><img src="assests/img/1_icon.jpg" alt=""></i>
+                                <div class="book_heading">
+                                    <h3 class="">
+                                        البداية و النهابة الجزء الأول
+            
+                                    
+                                    </h3>
+                                    <span class="product_note">
+                                        هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني  
+                                    </span>
+                                </div>
+                            </div>
+            
+                            <span class="price">
+                                3.99 <span class="currency">ر.س</span>
+                            </span>
+                            
+                        </div>
+                        
+                </div>
+                <div class="product_item">
+                    <div class="book_img_info">
+                        <div class="book_img_heading">
+                            <i class="book_img"><img src="assests/img/1_icon.jpg" alt=""></i>
+                            <div class="book_heading">
+                                <h3 class="">
+                                    البداية و النهابة الجزء الأول
+                                
+                                </h3>
+                                <span class="product_note">
+                                    هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني  
+                                </span>
+                            </div>
+                        </div>
+            
+                        <span class="price">
+                            3.99 <span class="currency">ر.س</span>
+                        </span>
+                        
+                    </div>
+                    
+            </div>
+            <div class="product_item">
+                <div class="book_img_info">
+                    <div class="book_img_heading">
+                        <i class="book_img"><img src="assests/img/1_icon.jpg" alt=""></i>
+                        <div class="book_heading">
+                            <h3 class="">
+                                البداية و النهابة الجزء الأول
+            
+                            
+                            </h3>
+                            <span class="product_note">
+                                هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني  
+                            </span>
+                        </div>
+                    </div>
+            
+                    <span class="price">
+                        3.99 <span class="currency">ر.س</span>
+                    </span>
+                    
+                </div>
+                
+            </div>
+            <div class="product_item">
+                <div class="book_img_info">
+                    <div class="book_img_heading">
+                        <i class="book_img"><img src="assests/img/1_icon.jpg" alt=""></i>
+                        <div class="book_heading">
+                            <h3 class="">
+                                البداية و النهابة الجزء الأول
+            
+                            
+                            </h3>
+                            <span class="product_note">
+                                هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني  
+                            </span>
+                        </div>
+                    </div>
+            
+                    <span class="price">
+                        3.99 <span class="currency">ر.س</span>
+                    </span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+                    
+                </div>
+                <div class="basket_container">
+                    <div class="upper_section">
+                        <div class="sum"><div class="right_side"> المجموع </div> <div class="left_side">68.97 <span class="currency_sum">ر.س</span></div></div>
+                        <div class="delivery_cost"><div class="right_side">   تكاليف الشحن   </div> <div class="left"><span class="cost_span">مجاني  </span> </div></div>
+                        <div class="total"><div class="right_side">  المجموع الكلي  <span class="currency_sum"> شامل الضريبة </span></div> <div class="left_side">68.97 <span class="currency"> ر.س</span></div>
+                    
+                    </div>
+                
+                    
+                </div>
+                
+            
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="guidlines hidden">
+        <div class="container">
+    
+            <div class="checkout_cards_container" style="justify-content:center; text-align:center;">
+            
+            <div class="chckout_prod_con">
+                <h2 style> خطوات تأكيد عملية الشراء</h2>
+
+                <div class="product_item">
+                    <div class="book_img_info">
+                        <div class="book_img_heading">
+                            <div class="book_heading" style=" padding: 10px 5px; border-width:20px;">
+                                <h3 class="">
+                                    ادخال المعلومات الشخصية المتعلقة بالشحن
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="product_item">
+                <div class="book_img_info">
+                    <div class="book_img_heading">
+                        <div class="book_heading" style=" padding: 10px 5px; border-width:20px;">
+                            <h3 class="">
+                                ادخال المعلومات المتعلقة بوسيلة الدفع 
+        
+                            </h3>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="product_item">
+            <div class="book_img_info">
+                <div class="book_img_heading">
+                    <div class="book_heading" style=" padding: 10px 5px; border-width:20px;">
+                        <h3 class="">
+        
+                            مراجعة المنتجات التي تم اختيارها        
+        
+                        
+                        </h3>
+                        <span class="product_note">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="product_item">
+            <div class="book_img_info">
+                <div class="book_img_heading">
+                    <div class="book_heading " style=" padding: 10px 5px; border-width:20px;">
+                        <h3 class="">
+                                الضغط على زر التأكيد بعد التحقق من صحة الخطوات السابقة
+                        </h3>
+                </div>
+            </div>
+            
+        </div>   
+            </div>
+        </div>
+            </div>
+    </div>
+   </div>
+
+<div class="img_overlay">
+    <div class="model_inner_box">
+     <h3> تمت عملية الشراء بنجاح</h3>
+     <a href="index.html"> <button> موافق</button></a>
+      <a href="index.html"><i class="close"> <img src="img/close_icon.svg" alt=""></i></a>
+  </div>
+</div>
+
+ <!-- sign in -->
+ 
+ <div class="overly">
+    <div class="signin">
+        <div class=" form_container_signin">
+            <i  class="close_signin"> <img src="img/close_icon.svg" alt=""></i>
+           <div class="sign_header">
+               <h3>تسجيل الدخول</h3>
+           </div>
+           <hr>
+           
+            <!--signin -->
+              <!--  -->
+            <form action="" >
+    
+            <div class="input_containtr"><input type="text">
+                <span class="input_title">البريد الالكتروني</span>
+            </div>
+          
+            <div class="input_containtr"><input type="text">
+                <span class="input_title">كلمة السر</span>
+                <span class="forget">نسيت؟</span>
+            </div>
+            
+            <div class="input_containtr log_in"><button> تسجيل دخول</button></div>
+                                                        
+            
+       </form>
+       <div class="form_footer">
+           <span>لديك حساب؟ </span>
+           <a href="sign_up.html"><button class="creat_account">  إنشاء حساب جديد</button></a>
+       </div>
+              
+     </div>
+    </div>
+ 
+</div>
+
+
+<!-- sign up -->
+<div class="overly">
+    <div class="signup">
+
+        <div class=" form_container">
+
+        <div class="sign_header">
+            <i  class="close_signup"> <img src="img/close_icon.svg" alt=""></i>
+            <h3>انشاء حساب</h3>
+            
+        </div>
+        <hr>
+        
+            <!-- sign_up -->
+            <!--  -->
+            <form action="">
+            <div class="number_container">
+                <div class="input_containtr"><input type="text" placeholder="رقم الجوال"></div>
+                <div class="input_containtr">
+                    <span>رمز البلد</span>
+                    <select name="contry_key">
+                        <option value="967">+967</option>
+                        <div><option value="+970" selected>+970<i><img src="" alt=""></i></option></div>
+                        <option value=""></option>
+                    </select>
+                    <i><img src="img/suadia.png" alt=""></i>
+                </div>
+            </div>
+            <div class="valid_notes">سوف نرسل  لك<span> رمز  التحقق عن طريق رسالة نصية</span>  </div>
+                
+                    <div class="input_containtr  input_darker"><input type="text" >
+                    <span class="span_valid_num">ارسال رمز التحقق </span></div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">الاسم الأول</span></div>
+                
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">اسم العائلة</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">البريد الالكتروني</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title"> تأكيد البريد الالكتروني</span>
+                </div>
+                <div class="input_containtr"><input type="text">
+                    <span class="input_title">كلمة السر</span>
+                </div>
+                <div class="checkbox_container">
+                    <input type="checkbox" name="policy" value="agree"checked>   أوافق على <span>على الشروط والأحكام</span>  <br>
+                    <input type="checkbox" name="subscribe" value="yes" checked> التسجيل للانضمام للبشرة البردية<br>
+                </div>
+                
+                 <button class="btn"> إنشاء حساب</button>
+                                                            
+                <div class="form_footer">
+                    <span>لديك حساب؟ </span><a href="login.html">تسجيل الدخول &lt;</a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+   
+    <div class="upper_footer">
+      <div class="container">
+        <div class="subscribe_srv_abt_container">
+            <div class="subscribe_social_container">
+    
+                    <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                    <div class="emial_cont">
+                        <div class="input_cont"> <input type="email" placeholder="ادخل بريدك الالكتروني"> <i class="fas fa-lock"></i></div>
+                        
+                        <button class="btn">اشتراك</button>
+                    </div> 
+              
+            </div>
+        
+    
+            <div class="custmer_srv_container">
+                <div class="custmer_srv_container">
+                    <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+
+                </div> 
+            </div>
+            <div class="custmer_srv_container">
+                <div class="custmer_srv_container">
+                    <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+
+                </div> 
+            </div>
+            <div class="custmer_srv_container">
+                <div class="custmer_srv_container">
+                    <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+
+                </div> 
+            </div>
+            <div class="custmer_srv_container">
+                <div class="custmer_srv_container">
+                    <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>مبيعات الشركات</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                        <p>الاسئلة المتكررة</p>
+                    <h5 class="footer_heading">انضم الى نشرتنا البريدية</h5>
+                </div> 
+            </div>
+        </div>
+         <div class="subscribe_srv_abt_container">
+                <div class="social_links_contianer">
+                    <h5 class="footer_heading">تواصل معنا</h5>
+                    <ul>
+                        <li><a href=""><i><img src="img/face.png" alt=""></i></a></li>
+                        <li><a href=""><i> <img src="img/twitter.png" alt=""></i></a></li>
+                        <li><a href=""><i> <img src="img/youtube.png" alt=""></i></a></li>
+                        <li><a href=""><i> <img src="img/insta.png" alt=""></i></a></li>
+                        <li><a href=""><i> <img src="img/linkedin.png" alt=""></i></a></li>
+                        <li><a href=""><i> <img src="img/snap.png" alt=""></i></a></li>
+                        <li><a href=""><i> <img src="img/snap.png" alt=""></i></a></li>
+                       
+
+                    </ul> 
+                </div>
+        </div>
+     
+    </div>
+</div>
+
+    <div class="lower_footer_container">
+        <div class="container">
+        <div class="lower_footer">
+        <div class="footer_img_container">
+            <div>  <img src="img/Amazon.jpg" alt=""></div>
+            <div><img src="img/MasterCard.svg" alt=""> </div>
+            <div><img src="img/visa_1.png" alt=""> </div>
+         
+            <div><img src="img/mada.svg" alt=""> </div>
+            <div> <img src="img/qitaf_logo.png" alt=""> </div>
+            <div><img src="img/visa_1.png" alt="">  </div>
+
+        </div>
+        
+        <div class="footer_copyright_container">
+            <div> <span> سياسة الخصوصية</span> 
+                    <div class="sperator"></div>
+                    <span> شروط الخدمة </span>
+            </div>
+            <div>  .جميع الحقوق محفوظة لمكتبة جرير  &copy 2015. س.ت. 1010032264. اونلاين س.ت. 1010654213</div>
+        </div>
+
+    </div>
+</div>
+</div>
+</footer>
+</body>
+
+<script>
+
+var img_overlay=document.querySelector(".img_overlay");
+var check_out=document.querySelector(".check_out");
+var payment=document.querySelector(".payment");
+var user_info=document.querySelector(".user_info");
+var guidlines=document.querySelector(".guidlines");
+  var img_close=document.querySelector(".close");
+  var iframe_steper = document.getElementById("iframe_steper");
+    var circles =document.querySelectorAll(".circle");
+    var line_colored=document.querySelector(".line_colored");
+     var prevs =document.getElementById("prevs");
+     var page_slider =document.querySelector(".page_slider");
+     var btn_container =document.querySelector(".btn_container");
+    var nexts =document.getElementById("nexts");  
+    var circle_heading =document.querySelectorAll(".circle_heading");
+    var progeress_container =document.querySelector(".progeress_container");
+    
+  img_close.onclick=function(){
+        img_overlay.style.visibility="hidden";
+        
+        
+      }
+  
+      iframe_steper.innerHTML=guidlines.innerHTML;
+       prevs.style.visibility="hidden";
+       nexts.innerHTML="أبدأ";
+       var iframe_conter=0;
+       var counter = 0;
+       nexts.onclick=function(){
+            counter++;
+            console.log(counter);
+        
+           if(counter>4){
+
+            counter=4;
+           }
+           console.log(counter);
+           if(counter==1){
+            iframe_steper.innerHTML=user_info.innerHTML;
+            nexts.innerHTML="التالي ";
+            prevs.style.visibility="visible";
+            progeress_container.style.display="flex";
+            
+          
+           }
+           else if( counter==2){
+            iframe_steper.innerHTML=payment.innerHTML;
+            nexts.innerHTML="التالي ";
+            line_colored.style.width="40%";
+           
+        
+        }
+            else if(counter==3){
+            iframe_steper.innerHTML=check_out.innerHTML;
+            nexts.innerHTML="تأكيد ";
+             line_colored.style.width="80%";
+         
+           
+          
+            }
+            else if(counter==4){
+                prevs.style.visibility="hidden";
+               img_overlay.style.visibility="visible";
+
+                console.log( "over "+img_overlay);
+               
+            }
+            
+           step_item();
+        
+          
+           
+       }
+    
+       prevs.onclick=function(){
+         counter--;
+           if(counter<=0){
+            counter=0;
+           }
+           console.log(counter);
+           if(counter==0){
+            iframe_steper.innerHTML=guidlines.innerHTML;
+            progeress_container.style.display="none";
+
+            prevs.style.visibility="hidden";
+            nexts.innerHTML="أبدأ";
+           }
+           else if(counter==1){
+            iframe_steper.innerHTML=user_info.innerHTML;
+
+            nexts.innerHTML="التالي ";
+            line_colored.style.width="0%";
+             }
+           else if( counter==2){
+            iframe_steper.innerHTML=payment.innerHTML;
+
+            nexts.innerHTML="التالي ";
+            line_colored.style.width="40%";
+            console.log(line_colored.width);
+          
+        
+        }
+           step_item();
+
+       }
+
+function step_item(){
+    circles.forEach((circle,i)=>{
+
+        if(i<counter){
+            circle.style.backgroundColor="#0052cc";
+            circle.style.color="white";
+            circle_heading[i].classList.add("font_colored");
+            console.log( circle);
+            console.log( " i="+i+ "counter=" +counter);
+            console.log( circle_heading[i]);
+         
+        }
+        else{
+            circle.style.backgroundColor="#e0e0e0";
+            circle.style.color="grey";
+            circle_heading[i].classList.remove("font_colored");
+            
+        }
+        
+    });
+}
+
+     
+  
+   
+     
+</script>
+<script src="js/header.js">  </script>
+</html>
